@@ -9,7 +9,7 @@ const createWindow = () => {
 
   });
 
-  HomePage.loadFile('index.html');
+  HomePage.loadFile('HomePage.html');
 
 };
 
@@ -27,6 +27,7 @@ app.whenReady().then(() => {
   });
 });
 
+// Assists With Platform-Specific Application Closing
 app.on('window-all-closed', () => {
 
   if (process.platform !== 'darwin') {
