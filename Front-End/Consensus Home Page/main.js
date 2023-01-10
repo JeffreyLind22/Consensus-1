@@ -4,6 +4,11 @@ const createWindow = () => {
 
   const HomePage = new BrowserWindow({
 
+    webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false,
+    },
+
     fullscreen: true,
     backgroundColor: "#323232"
 
