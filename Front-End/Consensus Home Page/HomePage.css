@@ -28,10 +28,18 @@
 
 .Department-Button-Image {
 
-    margin: 35px;
+    margin: 15px;
     padding: 0;
     width: auto;
     height: auto;
     max-width: 10vw;
+
+}
+
+.Department-Button-Text {
+
+    color: #F7F7F7;
+    font-size: 15px;
+    letter-spacing: 0.3px;
 
 }
