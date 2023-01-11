@@ -1,0 +1,9 @@
+.Home-Button {
+    background-color: transparent;
+    border: none;
+}
+
+.Home-Button-Image {
+    width: 50px;
+    margin: 10px;
+}
