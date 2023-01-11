@@ -1,3 +1,10 @@
+.Standard-Text-Style {
+
+    color: #F7F7F7;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
 .Home-Button {
 
     background-color: transparent;
@@ -12,4 +19,13 @@
     width: 50px;
     margin: 10px;
     
+}
+
+.Department-Page-Title {
+
+    grid-column-start: 2;
+    grid-row-start: 1;
+    font-size: 40px;
+    margin-left: 18px;
+
 }

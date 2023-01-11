@@ -15,14 +15,14 @@
     margin: 0;
     padding: 0;
     border: none;
-    cursor: pointer;
     background-color: inherit;
     
 }
 
-.Department-Buttons:hover {
+.Department-Buttons > a :hover {
 
     opacity: 0.85;
+    cursor: pointer;
 
 }
 
@@ -38,8 +38,8 @@
 
 .Department-Button-Text {
 
-    color: #F7F7F7;
     font-size: 15px;
+    font-weight: 400;
     letter-spacing: 0.3px;
 
 }
