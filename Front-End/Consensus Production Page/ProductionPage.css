@@ -5,3 +5,16 @@
     grid-template-rows: repeat(15, 1fr);
     
 }
+
+.New-Production-Report-Button {
+
+    width: 150%;
+    grid-column-start: 2;
+    grid-row-start: 11;
+    align-self: start;
+    justify-self: start;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+}

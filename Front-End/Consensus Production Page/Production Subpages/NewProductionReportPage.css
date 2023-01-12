@@ -1,0 +1,7 @@
+.New-Production-Report-Page-Grid {
+
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    
+}
