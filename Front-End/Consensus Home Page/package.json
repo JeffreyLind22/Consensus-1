@@ -5,13 +5,16 @@
   "main": "main.js",
   "author": "Jeffrey Lind",
   "license": "PlastiExports",
-  "devDependencies": {
-    "electron": "^22.0.0"
-  },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "postinstall": "install-app-deps"
   },
   "dependencies": {
-    "sqlite": "^4.1.2"
+    "electron": "^22.0.1",
+    "mysql2": "^3.0.1"
+  },
+  "devDependencies": {
+    "electron-builder": "^23.6.0",
+    "electron-rebuild": "^3.2.9"
   }
 }
