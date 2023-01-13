@@ -1,14 +1,5 @@
 const { app, BrowserWindow } = require('electron');
 
-var mysql = require("mysql2");
-
-var connection = mysql.createConnection({
-  host: "localhost",
-  user: "jeffreylind",
-  password: "Jefgillin2006!1",
-  database: "ConsensusCoreData"
-});
-
 const createWindow = () => {
 
   const HomePage = new BrowserWindow({
@@ -36,7 +27,7 @@ app.whenReady().then(() => {
     if (BrowserWindow.getAllWindows().length === 0) {
 
       createWindow();
-      
+
     }
   });
 });
