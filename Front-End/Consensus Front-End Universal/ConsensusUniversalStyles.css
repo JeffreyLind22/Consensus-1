@@ -1,3 +1,4 @@
+/* Universal Text Styles */
 .Standard-Text-Style {
 
     color: #F7F7F7;
@@ -5,6 +6,28 @@
     
 }
 
+.Consensus-Page-Title {
+
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-column-end: 8;
+    font-size: 40px;
+    margin-left: 18px;
+
+}
+
+/* Styles For Displaying A Small Department Icon On Department Subpages */
+.Department-Subpage-Static-Icon {
+    
+    width: 50px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    align-self: center;
+    justify-self: center;
+
+}  
+
+/* Universal Small Home Button Styles */
 .Home-Button {
 
     background-color: transparent;
@@ -25,24 +48,4 @@
     width: 50px;
     margin: 10px;
     
-}
-
-.Consensus-Page-Title {
-
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-column-end: 8;
-    font-size: 40px;
-    margin-left: 18px;
-
-}
-
-.Department-Subpage-Static-Icon {
-    
-    width: 50px;
-    grid-row-start: 1;
-    grid-column-start: 1;
-    align-self: center;
-    justify-self: center;
-
 }

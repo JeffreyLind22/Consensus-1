@@ -6,24 +6,25 @@
 
     <meta charset="UTF-8" />
 
-    <meta
+    <!-- The following meta tag restricts inline scripts and styles through Content-Security-Policy (styles restricted through default-src) https://content-security-policy.com -->
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self'; script-src 'self'"/>
 
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-
-    />
-
-    <link rel = "stylesheet" href = "../Consensus Front-End Universal/ConsensusUniversalStyles.css">
+    <!-- Universal Consensus Styles And Page Specific Styles-->
+    <link rel = "stylesheet" href = "../Consensus Front-End Universal/ConsensusUniversalStyles.css"> 
     <link rel = "stylesheet" href = "EngineeringPage.css">
 
+    <!-- Displays In The OS During Application Runtime -->
     <title>Consensus Engineering Page</title>
 
-  </head>
+  </head> 
 
   <body>
 
+    <!-- Defines A Page-Wide Grid For Sub-Element Placement-->
     <div class = "Engineering-Page-Grid">
 
+      <!-- Home Button --> 
       <button class = "Home-Button" type = "button">
 			
         <a href = "../Consensus Home Page/HomePage.html"> 
@@ -34,6 +35,7 @@
     
       </button>
 
+      <!-- Engineering Page Title -->
       <h1 class = "Consensus-Page-Title Standard-Text-Style">Engineering Home</h1>
 
     </div>

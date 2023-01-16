@@ -5,17 +5,21 @@ const createWindow = () => {
   const HomePage = new BrowserWindow({
 
     webPreferences: {
+
+      // The following enable NodeJS integration and features in ElectronJS
       nodeIntegration: true,
       contextIsolation: false,
+
     },
 
     fullscreen: true,
-    backgroundColor: "#323232"
+    backgroundColor: "#323232" // Dark Greyish
 
   });
-
+ 
+  // Application Entry Point
   HomePage.loadFile('HomePage.html');
-
+ 
 };
 
 app.whenReady().then(() => {

@@ -6,24 +6,25 @@
 
     <meta charset="UTF-8" />
 
-    <meta
+    <!-- The following meta tag restricts inline scripts and styles through Content-Security-Policy (styles restricted through default-src) https://content-security-policy.com -->
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self'; script-src 'self'"/>
 
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-
-    />
-
+    <!-- Universal Consensus Styles And Page Specific Styles-->
     <link rel = "stylesheet" href = "../Consensus Front-End Universal/ConsensusUniversalStyles.css">
     <link rel = "stylesheet" href = "HRPage.css">
 
+    <!-- Displays In The OS During Application Runtime -->
     <title>Consensus HR Page</title>
 
   </head>
 
   <body>
-
+    
+    <!-- Defines A Page-Wide Grid For Sub-Element Placement-->
     <div class = "HR-Page-Grid">
 
+      <!-- Home Button -->
       <button class = "Home-Button" type = "button">
 			
         <a href = "../Consensus Home Page/HomePage.html"> 
@@ -32,12 +33,13 @@
  
         </a>
     
-      </button>
+      </button> 
 
+      <!-- HR Page Title -->
       <h1 class = "Consensus-Page-Title Standard-Text-Style">HR Home</h1>
 
     </div>
 
-  </body>
+  </body> 
   
 </html>

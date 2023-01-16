@@ -6,34 +6,37 @@
 
     <meta charset="UTF-8" />
 
-    <meta
+    <!-- The following meta tag restricts inline scripts and styles through Content-Security-Policy (styles restricted through default-src) https://content-security-policy.com -->
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self'; script-src 'self'"/>
 
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-
-    />
-
+    <!-- Universal Consensus Styles And Page Specific Styles-->
     <link rel = "stylesheet" href = "../../../Consensus Front-End Universal/ConsensusUniversalStyles.css">
     <link rel = "stylesheet" href = "NewProductionReportPage.css">
 
+    <!-- Displays In The OS During Application Runtime -->
     <title>Consensus New Production Report Page</title>
 
   </head>
 
   <body>
 
-    <div class = "New-Production-Report-Page-Grid">
+    <!-- Defines A Page-Wide Grid For Sub-Element Placement-->
+    <div class = "New-Production-Report-Page-Grid"> 
 
+      <!-- Static Production Icon -->
       <img class = "Department-Subpage-Static-Icon" src = "../../../../Resources/Production Resources/ProductionIconNoBackground.png" alt = "Production Icon">
 
+      <!-- New Production Report Page Title -->
       <h1 class = "Consensus-Page-Title Standard-Text-Style">New Production Report</h1>
-
-      <input type = "button" value = "Connect To MySQL" id = "btn"/>
+ 
+      <!-- MySQL Database Connection Button -->
+      <input type = "button" value = "Connect To MySQL" id = "ConnectToMySQLButton"/>
       
     </div>
-    
-    <script src = "./NewProductionReportPage.js"></script>
+
+    <script src = "./NewProductionReportPage.js"></script> 
 
   </body>
-  
+   
 </html>

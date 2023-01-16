@@ -1,7 +1,8 @@
+/* Defines A Page-Wide Grid For Sub-Element Placement */
 .Quality-Page-Grid {
 
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(15, 1fr);
     
-}
+}  

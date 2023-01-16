@@ -2,76 +2,82 @@
 
 <html>
 
-	<head>
+  <head>
 
-    	<meta charset="UTF-8"/>
+    <meta charset="UTF-8"/>
 
-    	<meta
-      		http-equiv="Content-Security-Policy"
-      		content="default-src 'self'; script-src 'self'"
-		/>
+	<!-- The following meta tag restricts inline scripts and styles through Content-Security-Policy (styles restricted through default-src) https://content-security-policy.com -->
+	<meta http-equiv="Content-Security-Policy" 
+		  content="default-src 'self'; script-src 'self'"/>
 
-		<link rel = "stylesheet" href = "HomePage.css">
-		<link rel = "stylesheet" href = "../Consensus Front-End Universal/ConsensusUniversalStyles.css">
+    <!-- Universal Consensus Styles And Page Specific Styles-->
+	<link rel = "stylesheet" href = "../Consensus Front-End Universal/ConsensusUniversalStyles.css">
+	<link rel = "stylesheet" href = "HomePage.css">
 
-    	<title>Consensus Home Page</title>
+    <!-- Displays In The OS During Application Runtime -->
+    <title>Consensus Home Page</title>
 
-	</head>
-
-	<body>
+  </head> 
  
-		<div class = "Department-Button-Grid">
+  <body>
+ 
+	<!-- Defines A Grid For Department Buttons -->
+	<div class = "Department-Button-Grid">
+
+	  <!-- HR Department Button -->
+	  <button class = "Department-Buttons HR-Department-Button" type = "button">
 		
-			<button class = "Department-Buttons HR-Department-Button" type = "button">
-			
-				<a href = "../Consensus HR Page/HRPage.html"> 
+	    <a href = "../Consensus HR Page/HRPage.html"> 
 
-					<img src = "../../Resources/Department Button Icons/hricon.png" class = "Department-Button-Image" alt = "HR Department Button"> 
+		  <img src = "../../Resources/Department Button Icons/hricon.png" class = "Department-Button-Image" alt = "HR Department Button"> 
 
-				</a>
+		</a>
 
-				<span class = "Department-Button-Text Standard-Text-Style">HR</span>
-			
-			</button>
-
-			<button class = "Department-Buttons Engineering-Department-Button" type = "button">
-			
-				<a href = "../Consensus Engineering Page/EngineeringPage.html"> 
-
-					<img src = "../../Resources/Department Button Icons/engineeringicon.png" class = "Department-Button-Image" alt = "Engineering Department Button"> 
-			
-				</a>
-
-				<span class = "Department-Button-Text Standard-Text-Style">Engineering</span>
-			
-			</button>
-
-			<button class = "Department-Buttons Production-Department-Button" type = "button">
-			
-				<a href = "../Consensus Production Page/ProductionPage.html"> 
-					
-					<img src = "../../Resources/Department Button Icons/productionicon.png" class = "Department-Button-Image" alt = "Production Department Button"> 
-					
-				</a>
-			
-				<span class = "Department-Button-Text Standard-Text-Style">Production</span>
-
-			</button>
-
-			<button class = "Department-Buttons Quality-Department-Button" type = "button">
-			
-				<a href = "../Consensus Quality Page/QualityPage.html"> 
-					
-					<img src = "../../Resources/Department Button Icons/qualityicon.png" class = "Department-Button-Image" alt = "Quality Department Button"> 
-
-				</a>
-
-				<span class = "Department-Button-Text Standard-Text-Style">Quality</span>
-			
-			</button>
+		<span class = "Department-Button-Text Standard-Text-Style">HR</span>
 		
-		</div>
+	  </button>
+
+	  <!-- Engineering Department Button -->
+	  <button class = "Department-Buttons Engineering-Department-Button" type = "button">
+		
+	    <a href = "../Consensus Engineering Page/EngineeringPage.html"> 
+
+		  <img src = "../../Resources/Department Button Icons/engineeringicon.png" class = "Department-Button-Image" alt = "Engineering Department Button"> 
+		
+		</a>
+
+		<span class = "Department-Button-Text Standard-Text-Style">Engineering</span>
+		
+	  </button>
+
+	  <!-- Production Department Button -->
+	  <button class = "Department-Buttons Production-Department-Button" type = "button">
+		
+	    <a href = "../Consensus Production Page/ProductionPage.html"> 
+				
+		  <img src = "../../Resources/Department Button Icons/productionicon.png" class = "Department-Button-Image" alt = "Production Department Button"> 
+				
+		</a>
+		
+		<span class = "Department-Button-Text Standard-Text-Style">Production</span>
+
+	  </button>
+
+	  <!-- Quality Department Button -->
+	  <button class = "Department-Buttons Quality-Department-Button" type = "button">
+		
+	    <a href = "../Consensus Quality Page/QualityPage.html"> 
+				
+		  <img src = "../../Resources/Department Button Icons/qualityicon.png" class = "Department-Button-Image" alt = "Quality Department Button"> 
+
+		</a>
+
+		<span class = "Department-Button-Text Standard-Text-Style">Quality</span>
+		
+	  </button>
+
+	</div>
     
-  	</body>
+  </body>
 	
 </html>

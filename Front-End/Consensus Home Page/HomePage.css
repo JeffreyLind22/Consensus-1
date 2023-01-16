@@ -10,10 +10,11 @@
 
 }
 
-.Department-Buttons {
+/* Department Button Styles */
+.Department-Buttons { 
 
     margin: 0;
-    padding: 0;
+    padding: 0; 
     border: none;
     background-color: inherit;
     
@@ -44,6 +45,7 @@
 
 }
 
+/* Department Button Locations */
 .HR-Department-Button {
     
     grid-column-start: 1;

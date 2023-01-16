@@ -1,3 +1,4 @@
+/* Defines A Page-Wide Grid For Sub-Element Placement */
 .Production-Page-Grid {
 
     display: grid;
@@ -6,6 +7,7 @@
     
 }
 
+/* Production Page Buttons */
 .New-Production-Report-Button {
 
     width: 150%;
@@ -17,4 +19,4 @@
     border: none;
     padding: 0;
 
-}
+}  
