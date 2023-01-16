@@ -4,11 +4,10 @@
 
   <head>
 
-    <meta charset="UTF-8" />
-
-    <!-- The following meta tag restricts inline scripts and styles through Content-Security-Policy (styles restricted through default-src) https://content-security-policy.com -->
-    <meta http-equiv="Content-Security-Policy" 
-          content="default-src 'self'; script-src 'self'"/>
+    <!-- The http-equiv and content attributes restrict inline scripts and styles through Content-Security-Policy (styles restricted through default-src) https://content-security-policy.com -->
+    <meta charset="UTF-8"
+		      http-equiv="Content-Security-Policy" 
+		      content="default-src 'self'; script-src 'self'"/>
 
     <!-- Universal Consensus Styles And Page Specific Styles-->
     <link rel = "stylesheet" href = "../../../Consensus Front-End Universal/ConsensusUniversalStyles.css">
