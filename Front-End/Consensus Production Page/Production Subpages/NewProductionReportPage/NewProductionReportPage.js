@@ -1,13 +1,15 @@
+require('../../../Consensus Home Page/node_modules/dotenv').config()
+
 document.getElementById("ConnectToMySQLButton").addEventListener("click", () => {
   
     // Uses mysql2 npm package to support MySQL caching_sha2_password https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-authentication-protocol-requested-by-server
     var mysql = require("../../../Consensus Home Page/node_modules/mysql2"); 
 
     var connection = mysql.createConnection({ 
-      host: "localhost",
-      user: "jeffreylind",
-      password: "Jefgillin2006!1",
-      database: "ConsensusCoreData"
+      host: process.env.ConsensusCoreDataConnectionHost,
+      user: process.env.ConsensusCoreDataConnectionUser,
+      password: process.env.ConsensusCoreDataConnectionPassword,
+      database: process.env.ConsensusCoreDataConnectionDatabase
     });
 
     connection.connect((err) => {
