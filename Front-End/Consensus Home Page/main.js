@@ -8,7 +8,7 @@ const createWindow = () => {
 
       // The following enable NodeJS integration and features in ElectronJS
       nodeIntegration: true,
-      contextIsolation: false,
+      contextIsolation: false
 
     },
 
