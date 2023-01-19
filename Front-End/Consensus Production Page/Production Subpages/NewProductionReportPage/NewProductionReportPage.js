@@ -1,8 +1,10 @@
+// Allows for using the .env file located in /Consensus Home Page for MySQL database .createPool method
 require('../../../Consensus Home Page/node_modules/dotenv').config();
 
 // Uses mysql2 npm package to support MySQL caching_sha2_password https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-authentication-protocol-requested-by-server
 var MySQL2 = require("../../../Consensus Home Page/node_modules/mysql2"); 
 
+// Connects To MySQL ConsensusCoreData Database
 const ConsensusCoreDataConnection = MySQL2.createPool({
 
   host: process.env.ConsensusCoreDataConnectionHost,
@@ -12,6 +14,7 @@ const ConsensusCoreDataConnection = MySQL2.createPool({
   
 }).promise();
 
+// Example MySQL Query -- Whole Table
 async function TestConsensusCoreDataQuery() {
 
   const [rows] = await ConsensusCoreDataConnection.query("SELECT * FROM ConsensusCoreEmployees");
@@ -21,3 +24,14 @@ async function TestConsensusCoreDataQuery() {
 };
 
 console.log(TestConsensusCoreDataQuery());
+
+// Example MySQL Query -- Whole Row Per EmployeeID
+async function TestConsensusCoreDataQueryIndexed(id) {
+
+  const [rows] = await ConsensusCoreDataConnection.query(`SELECT * FROM ConsensusCoreEmployees WHERE EmployeeID = ${id}`);
+
+  return rows;
+
+};
+
+console.log(TestConsensusCoreDataQueryIndexed(2));
