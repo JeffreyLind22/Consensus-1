@@ -4,22 +4,20 @@ require('../../../Consensus Home Page/node_modules/dotenv').config()
 var MySQL2 = require("../../../Consensus Home Page/node_modules/mysql2"); 
 
 const ConsensusCoreDataConnection = MySQL2.createPool({
+
   host: process.env.ConsensusCoreDataConnectionHost,
   user: process.env.ConsensusCoreDataConnectionUser,
   password: process.env.ConsensusCoreDataConnectionPassword,
   database: process.env.ConsensusCoreDataConnectionDatabase
-});
+  
+}).promise();
 
-ConsensusCoreDataConnection.query("SELECT * FROM ConsensusCoreEmployees",(err, data) => {
+async function TestConsensusCoreDataQuery() {
 
-  if(err) {
+  const [rows] = await ConsensusCoreDataConnection.query("SELECT * FROM ConsensusCoreEmployees");
 
-      console.error(err);
+  return rows;
 
-      return;
+}
 
-  }
-
-  console.log(data);
-
-});
+console.log(TestConsensusCoreDataQuery())
