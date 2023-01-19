@@ -28,7 +28,7 @@ console.log(TestConsensusCoreDataQuery());
 // Example MySQL Query -- Whole Row Per EmployeeID
 async function TestConsensusCoreDataQueryIndexed(id) {
 
-  const [rows] = await ConsensusCoreDataConnection.query(`SELECT * FROM ConsensusCoreEmployees WHERE EmployeeID = ${id}`);
+  const [rows] = await ConsensusCoreDataConnection.query(`SELECT * FROM ConsensusCoreEmployees WHERE EmployeeID = ?`, [id]);
 
   return rows;
 
