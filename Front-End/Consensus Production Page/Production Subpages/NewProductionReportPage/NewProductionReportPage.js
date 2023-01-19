@@ -15,7 +15,7 @@ const ConsensusCoreDataConnection = MySQL2.createPool({
 }).promise();
 
 // Example MySQL Query -- Whole Table
-async function TestConsensusCoreDataQuery() {
+async function WholeTableQuery() {
 
   const [rows] = await ConsensusCoreDataConnection.query("SELECT * FROM ConsensusCoreEmployees");
 
@@ -23,15 +23,28 @@ async function TestConsensusCoreDataQuery() {
 
 };
 
-console.log(TestConsensusCoreDataQuery());
+console.log(WholeTableQuery());
 
 // Example MySQL Query -- Whole Row Per EmployeeID
-async function TestConsensusCoreDataQueryIndexed(id) {
+async function IndexedQuery(id) {
 
   const [rows] = await ConsensusCoreDataConnection.query(`SELECT * FROM ConsensusCoreEmployees WHERE EmployeeID = ?`, [id]);
 
-  return rows;
+  return rows[0];
 
 };
 
-console.log(TestConsensusCoreDataQueryIndexed(2));
+console.log(IndexedQuery(2));
+
+// Example MySQL Query -- Insert Employee Into ConsensusCoreEmployees -- DO NOT UNCOMMENT UNLESS YOU PLAN TO DELETE THE DATABASE ENTRY
+/*
+async function InsertQuery(EmployeeFirstName, EmployeeLastName) {
+
+  const result = await ConsensusCoreDataConnection.query(`INSERT INTO ConsensusCoreEmployees (EmployeeFirstName, EmployeeLastName) VALUES (?, ?)`, [EmployeeFirstName, EmployeeLastName]);
+
+  return result;
+
+}
+
+await InsertQuery('First_Name', 'Last_Name');
+*/
